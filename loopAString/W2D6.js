@@ -1,4 +1,4 @@
-/*
+/*kkk
 1-Write a function called loopAString that takes one parameter, a string of characters, 
 and logs all of its characters (one at a time) to the console. 
 Your function should use a while loop to log each character 
@@ -13,6 +13,9 @@ loopAString('nodeJS');
   // e
   // J
   // S
+  // done 
+  
+ 
 
 loopAString('abcd');
 // console output:
@@ -27,6 +30,10 @@ function loopAString(string) {
   // create a loop which iterates over the input string
   // log current string character to the console
   // increment value of index variable
+ var index
+ while (index<string.length){
+ 	console.log()
+ }
 }
 
 
@@ -36,5 +43,15 @@ function loopAString(string) {
 // reverseStr('hello'); "o1l2l3e4h"
 // Your code is here
 
+function reverseStr(str){
+	var string =""
+	var i=str.length
+	while(i<0){
+     
+    string = str[i]+i
+
+		i--
+	}
+}
 
 
