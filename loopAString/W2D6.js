@@ -44,5 +44,15 @@ function loopAString(string) {
 // reverseStr('hello'); "o1l2l3e4h"
 // Your code is here
 
-
+function reverseStr(string){
+  var counter=1
+  var str=""
+  var x=string.length-1
+  while(x>=0){
+    str+=string[x]+counter
+    counter++
+    x--
+  }
+  return str
+}
 
