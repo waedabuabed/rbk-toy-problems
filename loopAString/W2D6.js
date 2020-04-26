@@ -13,6 +13,9 @@ loopAString('nodeJS');
   // e
   // J
   // S
+  // done 
+  
+ 
 
 loopAString('abcd');
 // console output:
@@ -24,9 +27,14 @@ loopAString('abcd');
 */
 function loopAString(string) {
   // create an index variable
+  var i = 0;
   // create a loop which iterates over the input string
+  while(i<string.length){ 
   // log current string character to the console
+  console.log(string.charAt(i))
   // increment value of index variable
+  i++
+}
 }
 
 
@@ -36,5 +44,14 @@ function loopAString(string) {
 // reverseStr('hello'); "o1l2l3e4h"
 // Your code is here
 
+function reverseStr(string){
+  var i = string.length
+  var reversed=""
+  while(i>=0){
+reversed+=string.charAt(i)
 
+    i--
+  }
+  return reversed
+}
 
