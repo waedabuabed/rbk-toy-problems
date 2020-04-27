@@ -38,3 +38,54 @@ function loopAString(string) {
 
 
 
+function loopAString(str){
+  var x=0
+  while(x<str.length){
+    console.log(str.charAt(x))
+    x++
+  }
+}
+
+loopAString('nodeJS');
+// console output:
+  // n
+  // o
+  // d
+  // e
+  // J
+  // S
+  // done 
+  
+ 
+
+loopAString('abcd');
+// console output:
+  // a
+  // b
+  // c
+  // d
+
+
+
+
+// 2-Write a function called reverseStr that takes a string as an parameter 
+//and returns the reverse of each letter 
+//followed by a number starting from zero(solve it using while loop).
+// reverseStr('hello'); "o1l2l3e4h"
+// Your code is here
+
+
+function reverseStr(string){
+ var n=string.length-1
+  var x= ""
+  var y=1
+  while (n>=0){
+    var x= x +string.charAt(n)+y
+
+    n=n-1
+    y++
+    
+  }
+  return x 
+}
+
