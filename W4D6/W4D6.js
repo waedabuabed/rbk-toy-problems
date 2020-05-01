@@ -11,3 +11,21 @@ Another example could be:
 
 { name: "Gelato", countryOfOrigin: "Italy", flavor: "Chocolate Chip" }
 */
+
+function FavoriteDessert () {
+	var obj = {};
+	obj.name = name; 
+    obj.countryOfOrigin = countryOfOrigin;
+    obj.flavor = flavor;
+
+    return obj 
+}
+var creatobj = function(dessertName,country,flavorr){
+	this.name = dessertName;
+	this.countryOfOrigin = country
+	this.flavor = flavorr;
+}
+
+var x= FavoriteDessert();
+
+x.creatobj("mansaf:P","jordan","amazing");
