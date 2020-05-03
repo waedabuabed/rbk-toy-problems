@@ -35,19 +35,35 @@ I.e. If someone called your function with 10 objects
 (with all safely have the same properties), it should work just as well.
 */
 
-// your answer is here
-
-/*
-2-Working off of the same data structure as tallEnoughToRide, 
-write a function called tallestPerson that takes  an array of people objects as well, 
-and returns the name of the person with the greatest height, 
-along with how tall they are (see sample input below).
-
-Calling your function should result in:
-
-tallestPerson(groupA); //"Kiana at 55 inches"
+function tallEnoughToRide(people) {
+var arr = []
+   for (i=0; i < people.length ;i++) {
+    if (people[i].heightInInches >= 48){
+      arr.push(people[i]);
+    }
+  }
+return arr;
+}
 
 
-*/
+// 2-Working off of the same data structure as tallEnoughToRide, 
+// write a function called tallestPerson that takes  an array of people objects as well, 
+// and returns the name of the person with the greatest height, 
+// along with how tall they are (see sample input below).
 
-// your answer is here
+// Calling your function should result in:
+
+// tallestPerson(groupA); //"Kiana at 55 inches"
+
+
+function tallestPerson(people) {
+   var name=""
+   var greatest=people[0]
+   for (i=1; i < people.length ;i++) {
+    if (people[i].heightInInches >greatest){
+      greatest=people[i]
+    }
+  }
+return greatest.name + " at "+ greatest.heightInInches + " inches"
+}
+
