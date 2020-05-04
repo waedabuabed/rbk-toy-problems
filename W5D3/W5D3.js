@@ -35,5 +35,36 @@ Calling your function should result in:
 
 orderAVegetarianDish(staffA); //true
 */
+function each(coll,func){
+   
+  if (Array.isArray(coll)){
+    
+  for(var i=0;i<coll.length;i++){
+    func(coll[i],i)
+  }
+}
+else {
+  for (var key in coll){
+    func(coll[key],key)
+  }
+}
+}
 
-// your answer is here 
+function orderAVegetarianDis(people){
+  var result=true
+  each(people,function(element,i){
+    if (element.mealPreferences==="non-vegetarian"){
+      result=result&&false 
+    }
+    else {
+       result =result&&true
+    }
+
+  })
+  return result 
+
+
+}
+
+
+
